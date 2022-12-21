@@ -6,6 +6,26 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
+	name: "libMcClient",
+	owner: "samsung",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libMcClient.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libMcClient.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "camera.vendor.exynos7904",
 	owner: "samsung",
 	strip: {
@@ -362,23 +382,6 @@ cc_prebuilt_library_shared {
 	compile_multilib: "64",
 	check_elf_files: false,
 	relative_install_path: "hw",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libMcClient",
-	owner: "samsung",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libMcClient.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }

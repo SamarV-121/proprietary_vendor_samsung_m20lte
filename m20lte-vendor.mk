@@ -38,6 +38,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/m20lte/proprietary/vendor/firmware/setfile_5e9.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/setfile_5e9.bin
 
 PRODUCT_PACKAGES += \
+    libMcClient \
     camera.vendor.exynos7904 \
     libOpenCv.camera.samsung \
     libcsc \
@@ -59,7 +60,6 @@ PRODUCT_PACKAGES += \
     gatekeeper.exynos7904 \
     keystore.mdfpp \
     sensors.universal7904 \
-    libMcClient \
     libbauthserver \
     libbauthtzcommon \
     libkeymaster2_mdfpp \
