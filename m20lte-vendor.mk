@@ -61,7 +61,6 @@ PRODUCT_PACKAGES += \
     libskeymaster3device \
     libuniapi \
     libuniplugin \
-    libvideobeauty_interface \
     vendor.trustonic.tee@1.0 \
     vendor.trustonic.teeregistry@1.0 \
     vendor.trustonic.tee@1.0-service \
