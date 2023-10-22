@@ -39,32 +39,29 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libMcClient \
-    camera.vendor.exynos7904 \
-    libOpenCv.camera.samsung \
-    libcsc \
-    libexynoscamera \
-    libexynoscamera3 \
-    libgiantmscl \
-    libhifills \
-    libhifills_interface \
-    libhigh_dynamic_range \
-    libhwjpeg \
-    libmfhdr_interface \
-    libmpbase \
     liboemcrypto \
-    libsaiv_BeautySolutionVideo \
-    libsensorlistener \
-    libuniapi \
-    libuniplugin \
-    libvideobeauty_interface \
+    camera.exynos7904 \
     gatekeeper.exynos7904 \
     keystore.mdfpp \
     sensors.universal7904 \
+    libOpenCv.camera.samsung \
     libbauthserver \
     libbauthtzcommon \
+    libexynoscamera \
+    libexynoscamera3 \
+    libhifills \
+    libhifills_interface \
+    libhigh_dynamic_range \
     libkeymaster2_mdfpp \
     libkeymaster_helper_vendor \
+    libmfhdr_interface \
+    libmpbase \
+    libsaiv_BeautySolutionVideo \
+    libsensorlistener \
     libskeymaster3device \
+    libuniapi \
+    libuniplugin \
+    libvideobeauty_interface \
     vendor.trustonic.tee@1.0 \
     vendor.trustonic.teeregistry@1.0 \
     vendor.trustonic.tee@1.0-service \
